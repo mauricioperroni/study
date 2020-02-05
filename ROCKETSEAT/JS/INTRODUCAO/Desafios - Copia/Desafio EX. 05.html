@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Javascript RocketSeat : Mauricio P Sarmento / ROCKSEAT ( DESAFIO 5 )</title>
+
+</head>
+
+<body>
+    
+    <script>
+    
+    // INICIO DO JAVASCRIPT
+    // Exercicio 5 :
+    // Desafio : Dado o seguinte vetor de objetos: 
+    
+          
+    // INICIO
+
+    var usuarios = [
+  {
+    nome: 'Diego',
+    habilidades: ['Javascript', 'ReactJS', 'Redux']
+  },
+  {
+    nome: 'Gabriel',
+    habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+  },
+  // ACRESCENTEI MEU NOME PARA TESTAR AQUI
+  {
+    nome: 'Mauricio P Sarmento',
+    habilidades: ['VB.NET', 'JS', 'MYSQL' ]
+
+  }
+];
+
+// FUNCAO QUE VAI PERCORRER A LINHA BUSCANDO POR CADA INTERVALO DE USUARIO ACIMA E MOSTRAR VIA CONSOLE
+function exibeHabilidades(usuarios) {
+        // PARA CADA MEMBRO DE USUARUI DENTRO DE (USUARIOS)
+        for (usuario of usuarios) {
+            // O CONSOLE VAI ESCREVER O USUARIO + O TEXTO POSSUI AS HABILIDAES + A DESCRICAO DA HABILIDADE E INSERIR EM UMA STRING
+            // SO NAO ENTENDI SE ESSAS LINHA AQUI ELE ARMAZENA TEMPORARIAMENTE E JOGA FORA PARA CONSEGUIR ESCREVER OU OUTRA COISA.
+            console.log("O " + usuario.nome +" possui as habilidades: " +usuario.habilidades.join(", "));
+        }
+    }
+
+    // O CONSOLE PEGA A RESOLUÇÃO DO EXIBE AS HABILIDADES E AS DESCREVE
+   console.log(exibeHabilidades(usuarios));
+
+
+    // FIM    
+    
+    </script>
+
+</body>
+
+</html>
